@@ -30,7 +30,12 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 
 # Install other useful binaries.
+brew install fasd
 brew install git
+brew install node
+brew install npm
+brew install nvm
+brew install python
 
 # Remove outdated versions from the cellar.
 brew cleanup
