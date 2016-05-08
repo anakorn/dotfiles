@@ -23,6 +23,10 @@ Plugin 'tpope/vim-surround'
 Plugin 'mattn/emmet-vim'
 Plugin 'rking/ag.vim'
 Plugin 'Chun-Yang/vim-action-ag'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " syntax
 Plugin 'pangloss/vim-javascript'
@@ -61,6 +65,18 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 """ enable for specific files
 let g:user_emmet_install_global = 0
 autocmd FileType html,jade,css,less,sass,scss EmmetInstall
+
+"" editorconfig-vim
+""" To ensure that this plugin works well with Tim Pope's fugitive, use the following patterns array:
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
+"" airline
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'distinguished'
+""" Automatically displays all buffers when there's only one tab open.
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " vim configuration
 set number
