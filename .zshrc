@@ -8,6 +8,7 @@ if ! zgen saved; then
 
   # plugins
   zgen oh-my-zsh plugins/fasd
+  zgen oh-my-zsh plugins/git
 
   # completions
   zgen load zsh-users/zsh-completions src
