@@ -72,12 +72,21 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 "" airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'distinguished'
+"" let g:airline_theme = 'distinguished'
+let g:airline_theme = 'sol'
 """ Automatically displays all buffers when there's only one tab open.
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " vim configuration
+
 set number
 set relativenumber
+set showcmd
+
+"" key bindings
+map <Space> <Leader>
+map <Leader>] :bn<cr>
+map <Leader>[ :bp<cr>
+map <Leader>w :bd<cr>

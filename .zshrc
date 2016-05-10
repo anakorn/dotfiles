@@ -22,4 +22,4 @@ fi
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # aliases
-alias ls="ls -Aho"
+alias ls="gls -AhoGF --color"
