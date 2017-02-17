@@ -1,3 +1,10 @@
+# load docker machine
+eval "$(docker-machine env default)"
+
+# load nvm
+export NVM_DIR="${HOME}/.nvm"
+source "$(brew --prefix nvm)/nvm.sh"
+
 # load zgen
 source "${HOME}/.zgen/zgen.zsh"
 
@@ -22,4 +29,6 @@ fi
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # aliases
-alias ls="gls -AhoGF --color"
+alias ls="gls -AhoGF --color --group-directories-first"
+alias chrome="open -a 'Google Chrome'"
+alias aws-env-ow="aws elasticbeanstalk describe-environments --application-name overwatch"

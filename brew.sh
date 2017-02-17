@@ -30,6 +30,8 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 
 # Install other useful binaries.
+brew install awscli
+brew install aws-elasticbeanstalk
 brew install fasd
 brew install git
 brew install node

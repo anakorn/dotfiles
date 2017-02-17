@@ -1,3 +1,5 @@
 [user]
 	name = Alex Nakorn
-	email = alexnakorn@gmail.com
+	email = anakorn@blizzard.com
+[core]
+	excludesfile = /Users/anakorn/.gitignore

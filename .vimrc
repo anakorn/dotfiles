@@ -33,6 +33,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'posva/vim-vue'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -63,8 +64,10 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 
 "" emmet
 """ enable for specific files
-let g:user_emmet_install_global = 0
-autocmd FileType html,jade,css,less,sass,scss EmmetInstall
+let g:user_emmet_install_global = 1
+""autocmd FileType html,jade,css,less,sass,scss,md EmmetInstall
+""" single quotes in html attributes
+let g:user_emmet_settings = {'html':{'quote_char': "'",},}
 
 "" editorconfig-vim
 """ To ensure that this plugin works well with Tim Pope's fugitive, use the following patterns array:
@@ -72,18 +75,24 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 "" airline
 let g:airline_powerline_fonts = 1
-"" let g:airline_theme = 'distinguished'
-let g:airline_theme = 'sol'
+let g:airline_theme = 'distinguished'
+""let g:airline_theme = 'sol'
 """ Automatically displays all buffers when there's only one tab open.
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " vim configuration
-
 set number
 set relativenumber
 set showcmd
+""" no column color
+set colorcolumn=0
+set cc=0
+""" no max text width
+set textwidth=0
+set tw=0
+set hidden
 
 "" key bindings
 map <Space> <Leader>
