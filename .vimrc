@@ -93,6 +93,10 @@ set cc=0
 set textwidth=0
 set tw=0
 set hidden
+""" indent
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 "" key bindings
 map <Space> <Leader>
